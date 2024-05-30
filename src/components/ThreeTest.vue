@@ -25,28 +25,24 @@ objLoader.load('/static/models/hands.obj', function(object) {
 
     // 定义鼠标悬停事件处理函数
     function onMouseMove(event: { clientX: any; clientY: any; }) {
-    // 获取鼠标在屏幕上的位置
+        // 获取鼠标在屏幕上的位置
         const mouseX = event.clientX;
-        const mouseY = event.clientY;
-        object.rotation.x += 0.01;
-	    object.rotation.y += 0.01;
+        object.rotation.z = mouseX / window.innerWidth * 5 * Math.PI;
+    }   
+// 渲染场景
+    function animate() {
+        requestAnimationFrame(animate);
         object.rotation.z += 0.01;
-  // 修改物体的旋转属性
-    // object.rotation.z = mouseY * 120 * Math.PI;
-    // object.rotation.y = mouseY / window.innerHeight * 2 * Math.PI;
-}   
+        renderer.render(scene, camera);
+    }
+    animate();
 
 });
 
 // 添加鼠标悬停事件监听器
 
 
-// 渲染场景
-function animate() {
-    requestAnimationFrame(animate);
-    renderer.render(scene, camera);
-}
-animate();
+
 // animate();
 </script>
 
