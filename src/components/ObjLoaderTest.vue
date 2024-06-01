@@ -3,10 +3,13 @@ import * as THREE from 'three';
 
 import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { ref } from "vue";
 
 let camera: THREE.Object3D<THREE.Object3DEventMap>, scene: THREE.Scene, renderer: THREE.WebGLRenderer;
 
 let object: THREE.Object3D<THREE.Object3DEventMap>;
+
+const count = ref(0)
 
 init();
 
@@ -116,5 +119,6 @@ function render() {
 </script>
 
 <template>
+    <button class=" p-2 border-solid border-2 rounded-lg border-cyan-300" @:click="count++">count is : {{ count }}</button>
 
 </template>
