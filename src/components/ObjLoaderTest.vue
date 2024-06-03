@@ -13,9 +13,8 @@ const count = ref(0)
 
 init();
 
-
 function init() {
-
+    
     camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.1, 20 );
     // camera.position.z = 2.5;
     camera.position.z = 3;
@@ -120,5 +119,4 @@ function render() {
 
 <template>
     <button class=" p-2 border-solid border-2 rounded-lg border-cyan-300" @:click="count++">count is : {{ count }}</button>
-
 </template>
