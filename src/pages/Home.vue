@@ -9,5 +9,7 @@ import ThreeModel from "../components/ThreeModel.vue"
         <h1 class=" text-blue-400">homePage</h1>
         <ObjLoaderTest />
         <ThreeModel :width="100" :height="100" />
+        <router-link to="/hello">/users/eduardo</router-link>
+        <router-view></router-view>
     </div>
 </template>
