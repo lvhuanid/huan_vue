@@ -38,11 +38,7 @@ function init() {
             if ( child.isMesh ) child.material.map = texture;
 
         } );
-
-        // object.position.y = - 0.95;
-        // object.scale.setScalar( 0.01 );
         object.scale.setScalar( 0.04 );
-        // object.scale.set(0.15, 0.14, 0.15)
         object.rotation.set(-20, 0, 0)
         scene.add( object );
 
