@@ -14,5 +14,6 @@ import ThreeModel from "../components/ThreeModel.vue"
         <video class=" w-1/4 h-1/4" part="video" autoplay playsinline muted loop src="https://videos.pexels.com/video-files/8065325/8065325-hd_1280_720_25fps.mp4" preload="metadata">
             <track kind="metadata" label="cuepoints" data-removeondestroy="">
         </video>
+        <img class=" w-1/4 h-1/4" src="/src/assets/happy.gif" alt="">
     </div>
 </template>
