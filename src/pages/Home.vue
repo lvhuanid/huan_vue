@@ -41,6 +41,7 @@ import ThreeModel from "../components/ThreeModel.vue"
         <main>
             <router-view></router-view>
         </main>
+        111
         <!-- <ObjLoaderTest />
         <ThreeModel :width="100" :height="100" />
         <router-link to="/hello">/users/eduardo</router-link>
