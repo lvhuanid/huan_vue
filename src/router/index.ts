@@ -3,13 +3,14 @@ import type { RouteRecordRaw } from 'vue-router'
 
 const routes: RouteRecordRaw[] = [
   {
-    path: "", 
-    component: () => import('../pages/Home.vue'),
+    path: '/recommend',
+    // component: () => import('../pages/Home.vue'),
+    component: () => import('../pages/Recommand.vue'),
     children: [
       { 
         path: "hello", 
         component: () => import('../components/HelloWorld.vue')
-      },
+      },    
       { 
         path: "about",
         component: {
